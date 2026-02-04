@@ -1,0 +1,15 @@
+.languageElements{
+    width: 100px;
+    padding:0px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 0px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.languageElements:hover{
+    border-color: blueviolet;
+}

@@ -1,0 +1,6 @@
+.projects-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 24px;
+}

@@ -1,0 +1,18 @@
+.languages{
+    display: flex;
+    width: calc(100% - 10px);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boards{
+    text-align: center;
+    margin: 50px 0px;
+    box-shadow: 2px 2px 10px 5px slateblue;
+    border-radius: 10px;
+}
+
+
+.boards:hover{
+    transform: scale(1.02);
+}
