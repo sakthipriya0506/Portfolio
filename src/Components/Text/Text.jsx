@@ -1,8 +1,8 @@
 import React from 'react'
 
 export default function Text(props) {
-    const { children } = props
+    const { children, isHead } = props
   return (
-    <p>{children}</p>
+    <p className={'text' + (isHead ? ' head': '')}>{children}</p>
   )
 }

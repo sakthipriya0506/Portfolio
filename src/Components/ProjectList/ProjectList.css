@@ -2,6 +2,11 @@
     position: relative;
     text-decoration: none;
     font-weight: bold;
+    width: fit-content;
+}
+
+.project-link a{
+  color: var(--contrast-color);
 }
 
 .project-link::after {
@@ -20,4 +25,9 @@
 .project-link:hover::after {
   transform: scaleX(1); 
   transform-origin: bottom left;
+}
+
+.projects-list > .text{
+  font-size: 1.4em;
+  font-weight: 900;
 }

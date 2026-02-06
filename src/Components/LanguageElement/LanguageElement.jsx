@@ -6,7 +6,6 @@ export default function LanguageElement(props) {
     const {image, text} = props;
   return (
     <div className='languageElements'>
-        {/* <img src={image}/> */}
         <Text>{text}</Text>
     </div>
   )

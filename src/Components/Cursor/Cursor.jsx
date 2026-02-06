@@ -1,25 +1,29 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Cursor.css'
 
-export default function Cursor(props) {
-const {x, y} = props;
+export default function Cursor() {
 
-const cursor = document.querySelector('.cursor');
-const cursorFollower = document.querySelector('.cursor-follower');
+const cursor = useRef(null);
+const cursorFollower = useRef(null);
+const cursorGlow = useRef(null);
+
  document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
+            cursor.current.style.left = e.clientX + 'px';
+            cursor.current.style.top = e.clientY + 'px';
+            cursorGlow.current.style.left = e.clientX + 'px';
+            cursorGlow.current.style.top = e.clientY + 'px';
 
             setTimeout(() => {
-                cursorFollower.style.left = e.clientX + 'px';
-                cursorFollower.style.top = e.clientY + 'px';
+                cursorFollower.current.style.left = e.clientX + 'px';
+                cursorFollower.current.style.top = e.clientY + 'px';
             }, 100);
         });
 
   return (
     <React.Fragment>
-        <span className='cursor'></span>
-        <span className='cursor-follower'></span>
+        <span ref={cursor} className='cursor'></span>
+        <span ref={cursorFollower} className='cursor-follower'></span>
+        <span ref={cursorGlow} className="cursor-glow" id="cursor-glow"></span>
     </React.Fragment>
   )
 }

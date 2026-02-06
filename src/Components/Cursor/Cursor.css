@@ -27,3 +27,7 @@
     transform: scale(2);
     background: rgba(167, 139, 250, 0.2);
 }
+
+#cursorGlow{
+    position: absolute;
+}

@@ -5,7 +5,7 @@ import Text from '../Text/Text';
 export default function ProjectList(props) {
     const {projects, projectCategory} = props;
   return (
-    <li className='projectsList'>
+    <li className='projects-list'>
         <Text>{projectCategory}</Text>
         <ul>
             {projects.map((project, index) => (

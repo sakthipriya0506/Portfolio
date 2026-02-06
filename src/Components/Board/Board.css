@@ -6,10 +6,19 @@
 }
 
 .boards{
+    padding: 20px;
+    width: 350px;
     text-align: center;
     margin: 50px 0px;
-    box-shadow: 2px 2px 10px 5px slateblue;
+    border: 3px solid var(--high-contrast-color);
+    /* box-shadow: 2px 2px 10px 5px slateblue; */
     border-radius: 10px;
+}
+
+
+.boards > .text{
+    font-size: 2em;
+    font-weight: 900;
 }
 
 

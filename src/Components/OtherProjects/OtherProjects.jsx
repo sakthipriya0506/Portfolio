@@ -18,7 +18,6 @@ export default function OtherProjects() {
     ]}])
   return (
     <div className='other-projects'>
-        <Text>Other Projects</Text>
         <ul className='project-list-container'>
             {projects.map((projectList, index) => (
             <ProjectList projectCategory={projectList.category} key={index} projects={projectList.projects}/>

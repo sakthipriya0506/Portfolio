@@ -2,5 +2,12 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    color: var(--text-color);
+    height: 110vh;
+}
+
+.projects-container .head{
     font-size: 24px;
+    font-weight: 900;
+    color: var(--contrast-color);
 }
