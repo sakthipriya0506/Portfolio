@@ -2,15 +2,18 @@
     display: flex;
     width: calc(100% - 10px);
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .boards{
     padding: 20px;
-    width: 350px;
+    width: 100%;
     text-align: center;
     margin: 50px 0px;
-    border: 3px solid var(--high-contrast-color);
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* border: 3px solid var(--high-contrast-color); */
     /* box-shadow: 2px 2px 10px 5px slateblue; */
     border-radius: 10px;
 }
@@ -19,9 +22,6 @@
 .boards > .text{
     font-size: 2em;
     font-weight: 900;
-}
-
-
-.boards:hover{
-    transform: scale(1.02);
+    width: 250px;
+    text-align: left;
 }

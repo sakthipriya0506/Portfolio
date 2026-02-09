@@ -1,15 +1,24 @@
 .languageElements{
-    width: 100px;
-    padding:0px 15px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 10px 0px;
+    width: 120px;
+    padding: 5px 12px;
+    height: 44px;
+    /* border: 1px solid #666;; */
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    margin: 10px 20px;
     font-size: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.languageElements:hover{
-    border-color: blueviolet;
+.lang-icons{
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.boards:last-child .languageElements{
+    width: 190px;
 }

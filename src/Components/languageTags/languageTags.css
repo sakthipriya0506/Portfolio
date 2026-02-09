@@ -1,0 +1,19 @@
+.language-tags{
+    max-width: 100px;
+    width: auto;
+    height: 30px;
+    padding: 0px 10px;
+    align-items: center;
+    display: flex;
+    margin: 10px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    background-color: rgb(160, 80, 240, 0.6);
+    border: 1px;
+}
+
+.lang-icons{
+    display: block;
+    width: 25px;
+    height: 25px;
+}

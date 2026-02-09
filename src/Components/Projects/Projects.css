@@ -21,7 +21,7 @@
     border-top-right-radius: 10px;
 }
 
-.projects .languageElements{
+.projects .language-tags{
     max-width: 100px;
     width: auto;
     height: 30px;
@@ -29,8 +29,8 @@
     border-radius: 8px;
     font-size: 12px;
     background-color: rgb(160, 80, 240,0.6);
-    border: 0px;
+    border: 1px;
 }
-.projects .languageElements:hover{
+.projects .language-tags:hover{
     border-color: var(--text-color);
 }
