@@ -8,9 +8,9 @@ export default function LandingPage() {
   return (
     <div className='landing-page'>
         <div className='about-me'>
-          <Heading>Hello, I'm Priya</Heading>
+          <Heading>Hello, I'm <span className='name'>Priya Darshini</span></Heading>
           <Heading>Fullstack Developer</Heading>
-          <Text>I am a full stack development student with a strong focus on problem solving and logical thinking. I enjoy working on projects where I can analyze requirements, design clear solutions, and turn ideas into functional applications. I value clean code, consistency, and understanding how different parts of a system work together. I am continuously learning and improving my skills with the goal of building reliable, well-structured software.</Text>
+          <Text>I am a full stack development student with a strong focus on <span className='highlight'>problem solving</span> and <span className='highlight'>logical thinking.</span>  I value clean code, consistency, and understanding how different parts of a system work together, and I continue improving my skills by <i>building and refining projects.</i></Text>
         </div>
         <ProfileImage/>
     </div>

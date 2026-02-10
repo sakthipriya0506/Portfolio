@@ -8,10 +8,11 @@ import Cursor from './Components/Cursor/Cursor.jsx'
 import OtherProjects from './Components/OtherProjects/OtherProjects.jsx'
 import BGElements from './Components/BackgroundElements/BackgroundElements.jsx'
 import NavigationElements from './Components/NavigationElements/NavigationElements.jsx'
+import Text from './Components/Text/Text.jsx'
 
 function App() {
 
-  const [navPages, setNavPages] = useState([{title: 'Home'}, {title: 'Projects'},{title: 'Skills'}]);
+  const [navPages, setNavPages] = useState([{title: 'Home'}, {title: 'Projects'},{title: 'Skills'}, {title: 'More'}]);
   const [yPosition, setyPosition] = useState(0);
   document.getElementById('root').addEventListener('scroll', ()=> {console.log('scrolled');setyPosition(window.clientY)})
   // const [cursorPosition, setCursorPosition] = useState({x: 0, y: 0});
@@ -27,15 +28,19 @@ function App() {
   // }, []);
 
   return (
-    <div className="App">
-     <header className='header'>
-        <div className='left-header'></div>
+
+     <div className='App'>
+      <header className='header'>
+        <div className='left-header'>
+          <Text>Priya</Text>
+        </div>
         <nav className='right-header'>
           {navPages.map((pages, index)=> (
             <NavigationElements text={pages.title} key={index} index={index} yPosition={yPosition}/>
           ))}
         </nav>
       </header>
+    <div className="contents">
 
       <BGElements />
       <Cursor/>
@@ -56,6 +61,11 @@ function App() {
         <OtherProjects/>
       </Container>
     </div>
+    <footer>
+      <Text><span className='contact'>Find me at : </span>priyadarshini.s@zohocorp.com</Text>
+      <Text><img src='/repository.ico'/> Zoho Repository</Text>
+    </footer>
+     </div>
   )
 }
 

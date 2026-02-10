@@ -4,7 +4,7 @@ import './NavigationElements.css'
 
 export default function NavigationElements(props) {
     const {text, index, yPosition} = props;
-    const [Positions, setPositions] = useState([0, 1078, 2*1078 + 500])
+    const [Positions, setPositions] = useState([0, 1078, 2*1078 + 500, 3*1078 + 500])
     const [scrollDetails, setScrollDetails] = useState({left: '0', top: Positions[index], behavior: "smooth"});
 
     useEffect(() => {

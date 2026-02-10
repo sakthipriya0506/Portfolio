@@ -1,6 +1,7 @@
 #root{
   margin: auto;
-  width: 80%;
+  width: 98vw;
+  position: relative;
 }
 
 body{
@@ -37,11 +38,18 @@ a:hover{
   width: 300px;
 }
 
+.left-header{
+  font-size: 20px;
+  color: var(--contrast-color);
+  font-weight: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
 .header{
   position: sticky;
   top: 1%;
   left: 0;
-  width: 95%;
+  width: 98%;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -50,8 +58,36 @@ a:hover{
 }
 
 .App{
-  --text-color: white;
+  --dim-text-color: rgb(255, 255, 255, 0.7);
+  --text-color: #fff;
   --contrast-color: #646cff;
   --high-contrast-color: #6a5acd;
   --bg-color: #242424;
+}
+
+
+footer{
+  margin: auto;
+  width: 270px;
+}
+
+footer > *:last-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+footer img{
+  width: 25px;
+}
+
+.contact{
+  font-weight: 700;
+  color: var(--high-contrast-color);
+  font-size: 20px;
+}
+
+.contents{
+  width: 80%;
+  margin: auto;
 }

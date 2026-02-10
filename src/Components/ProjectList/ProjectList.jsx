@@ -10,7 +10,7 @@ export default function ProjectList(props) {
         <ul>
             {projects.map((project, index) => (
                 <li key={index} className='project-link'>
-                    <a href={project.link}>{project.name}</a>
+                    <a href={project.link} target='_blank'>{project.name}</a>
                 </li>
             ))}
         </ul>

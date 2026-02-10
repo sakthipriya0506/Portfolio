@@ -8,6 +8,26 @@
 
 .about-me{
     width: 55%;
+    font-size: 18px;
+}
+
+.highlight{
+    color: var(--high-contrast-color);
+    font-weight: 900;
+}
+
+.name{
+    position: relative;
+}
+
+.name::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: var(--high-contrast-color);
+    top: 100%;
+    left: 0%;
+    height: 5px;
 }
 
 /* .about-me p{
