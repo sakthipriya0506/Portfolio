@@ -4,9 +4,7 @@ import './ProfileImage.css'
 export default function ProfileImage(props) {
   const { src, alt } = props
   return (
-    <div className='profile-image'>
-
-    </div>
+    <img className='profile-image' src='/me.png'/>
   )
 }
 
