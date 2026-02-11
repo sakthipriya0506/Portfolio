@@ -69,16 +69,19 @@ a:hover{
 footer{
   margin: auto;
   width: 270px;
+  text-align: center;
 }
 
-footer > *:last-child{
+footer .text:last-child{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 150px;
+  width: 210px;
+  margin: auto;
 }
-footer img{
-  width: 25px;
+
+footer .text:last-child:hover{
+  color: var(--contrast-color);
 }
 
 .contact{

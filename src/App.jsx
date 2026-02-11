@@ -63,7 +63,7 @@ function App() {
     </div>
     <footer>
       <Text><span className='contact'>Find me at : </span>priyadarshini.s@zohocorp.com</Text>
-      <a href='https://repository.zohocorpcloud.in/zohocorp/user/Priyazoho-rep_002#/repositories'><Text><img src='/repository.ico'/> Zoho Repository</Text></a>
+      <a target='_blank' href='https://repository.zohocorpcloud.in/zohocorp/user/Priyazoho-rep_002#/repositories'><Text><img src='/repository.ico'/> Zoho Repository Profile</Text></a>
     </footer>
      </div>
   )
