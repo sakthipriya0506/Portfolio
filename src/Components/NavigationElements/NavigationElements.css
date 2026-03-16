@@ -10,10 +10,10 @@
 }
 
 .navigationElements:hover{
-    color: blueviolet;
+    color: var(--contrast-color);
     /* color: rgb(148, 94, 199); */
 }
 
 .navigationElements.current{
-    border-color: blueviolet;
+    border-color: var(--contrast-color);
 }
